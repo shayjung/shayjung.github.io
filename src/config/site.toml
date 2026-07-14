@@ -1,0 +1,206 @@
+[config.site]
+title = "Shay's Tech Archive"
+description = "Cloud, DevOps, 프로젝트 등 기술 관련 경험을 기록합니다."
+pageTitle = "Shay's Tech Archive"
+pageDescription = "Cloud, DevOps 엔지니어링 기술 기록과 프로젝트 아카이브."
+url = "https://shayjung.github.io"
+repository = "https://github.com/shayjung/shayjung.github.io"
+footerNote = "Built with Astro and Navfolio."
+
+[config.theme]
+# 可用色盘：
+# green-soft, green-vivid, rose-soft, pink-soft, purple-soft, blue-soft, orange-soft, brown-soft
+palette = "green-vivid"
+# 原生 UI 语言。可用值：en、zh-CN、zh-TW。未知值会回退到 en。
+lang = "en"
+
+[config.fonts]
+# 英文与代码感 UI 字体
+en = "Maple Mono"
+code = "Monaco"
+# 模板内可直接选择：ChillRoundM、LXGW WenKai
+# 中文阅读字体
+zh = "ChillRoundM"
+# 中文完整字体文件
+file = "/fonts/ChillRoundM.ttf"
+
+[config.code]
+lightTheme = "catppuccin-latte"
+darkTheme = "catppuccin-macchiato"
+lineNumbers = true
+wrap = true
+preserveIndent = true
+collapseStyle = "collapsible-auto"
+
+[config.math]
+render = "katex" # "katex" | "mathjax"
+
+[config.comments]
+enabled = false
+provider = "none"
+show_on_posts = true
+
+[config.search]
+enabled = true
+shortcut = "mod+k"
+placeholder = "Search notes..."
+maxResults = 6
+
+[config.pages.blog]
+title = "Writing notes"
+kicker = "Notebook archive"
+subtitle = "Notes from the margins."
+note = "Field notes, drafts, and technical margins arranged for slow browsing."
+postsPerPage = 6
+# date-fns 使用的日期格式模板。
+dateFormat = "yyyy-MM-dd"
+# 元信息分隔符。可以使用 "|"、"/" 等符号，也可以使用特殊值 "icon"。
+metadataSeparator = "icon"
+# 文章列表封面样式："card" 保留带边框的缩略图，"mask" 会将图片融合到右侧。
+coverImageStyle = "mask"
+
+[config.pages.blog.categories]
+title = "Categories"
+kicker = "Browse notes"
+subtitle = ""
+note = "A quiet index of recurring topics, gathered from article frontmatter."
+
+[config.pages.blog.series]
+title = "Series"
+kicker = "Reading paths"
+subtitle = ""
+note = "Connected notes that can be followed in the order they were written."
+
+[config.pages.projects]
+title = "Projects"
+kicker = "Project shelf"
+subtitle = "Small tools and site systems."
+note = "A compact shelf for implementation choices, releases, and publishing experiments."
+
+[config.pages.vibe]
+title = "vibe"
+kicker = ""
+subtitle = "Life and coding fragments."
+note = "Not formal enough for blog posts, but still part of the story."
+showTrail = true
+
+[config.comments.giscus]
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict = "0"
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "top"
+light_theme = "light"
+dark_theme = "dark"
+lang = "zh-CN"
+loading = "lazy"
+
+[config.comments.utterances]
+repo = ""
+issue_term = "pathname"
+label = "comment"
+theme = "github-light"
+
+[config.comments.waline]
+server_url = ""
+lang = "zh-CN"
+dark = "html.dark"
+pageview = true
+comment = true
+
+[config.profile]
+name = "Seoyoung Jung"
+handle = "@shayjung"
+role = "Cloud & DevOps Engineer"
+email = "seoyoung.jung.it@gmail.com"
+website = "https://shayjung.github.io/"
+github = "https://github.com/shayjung"
+avatar = "/images/profile-image.png"
+
+[[config.topNav.links]]
+label = "Home"
+href = "/"
+
+[[config.topNav.links]]
+label = "Blog"
+href = "/blog"
+
+[[config.topNav.links]]
+label = "Projects"
+module = "projects"
+
+[[config.topNav.links]]
+label = "Vibe"
+module = "vibe"
+
+[[config.topNav.links]]
+label = "About"
+href = "/about"
+
+[config.home]
+
+[config.home.quote]
+text = [
+  "",
+  "",
+]
+
+[config.home.intro]
+title = "I'm Seoyoung Jung"
+name = "Seoyoung Jung"
+body = [
+  "Cloud, DevOps 엔지니어링 기술 기록과 프로젝트 아카이브.",
+  "엔지니어링, 프로젝트, 자격증 등 기술 관련 경험을 기록합니다.",
+]
+
+[config.home.latest]
+count = 1
+heatmapWeeks = 24
+showHeatmapLatest = true
+excludeDraft = true
+startDate = ""
+dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "compass"
+title = "Portfolio"
+subtitle = "Selected work and case studies"
+href = "https://astro.navfolio.site/"
+
+[[config.home.navigation]]
+icon = "pen"
+title = "Blog"
+subtitle = "Essays, notes, and field reports"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "github"
+title = "Open Source"
+subtitle = "Code, experiments, and tools"
+href = "https://github.com/dodolalorc/astro-navfolio"
+
+[[config.home.links]]
+label = "GitHub"
+icon = "github"
+tooltip = "https://github.com/shayjung"
+copy = false
+
+[[config.home.links]]
+label = "LinkedIn"
+icon = "linkedin"
+tooltip = "https://www.linkedin.com/"
+copy = false
+
+[[config.home.links]]
+label = "Email"
+icon = "mail"
+tooltip = "seoyoung.jung.it@gmail.com"
+copy = true
+
+ [[config.home.doing]]
+ text = "Terraform Associate 자격증 공부 중"
+ mark = "01"
